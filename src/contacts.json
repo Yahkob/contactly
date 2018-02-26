@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Batman",
+    "email": "bruce@wayneenterprises.com",
+    "number": "555-123-4567"
+  },
+  {
+    "name": "Jake Harclerode",
+    "email": "jakobharclerode@gmail.com",
+    "number": "760-415-3605"
+  },
+  {
+    "name": "Elon Musk",
+    "email": "elon@spacex.com",
+    "number": "858-555-5555"
+  }
+]
