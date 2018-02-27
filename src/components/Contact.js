@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './Contact.css';
-import { Link } from "react-router-dom";
 
 const Contact = ({ contact }) => (
   <div className="contact">
@@ -11,5 +12,9 @@ const Contact = ({ contact }) => (
     </Link>
   </div>
 );
+
+Contact.Proptypes = {
+  contact: PropTypes.object
+};
 
 export default Contact;

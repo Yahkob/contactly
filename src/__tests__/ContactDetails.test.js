@@ -1,8 +1,8 @@
 import React from 'react';
-import ContactDetails from '../components/ContactDetails.js';
+import { MemoryRouter } from 'react-router-dom';
+import ContactDetails from '../components/ContactDetails';
 import renderer from 'react-test-renderer';
 import MockData from '../contacts.json';
-import { MemoryRouter } from "react-router-dom";
 
 it('renders correctly', () => {
   const tree = renderer
