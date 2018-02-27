@@ -1,0 +1,16 @@
+.contact {
+  border-bottom: 1px solid #ededed;
+  padding: 15px;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+}
+
+.email {
+  font-style: italic;
+  color: #505050bd;
+  color: #777;
+}
+
