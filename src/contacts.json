@@ -21,30 +21,30 @@
     "id": "5",
     "name": "Head Thornton",
     "email": "headthornton@songbird.com",
-    "phone": "+1 (902) 484-2937"
+    "number": "+1 (902) 484-2937"
   },
   {
     "id": "6",
     "name": "Earnestine Cortez",
     "email": "earnestinecortez@songbird.com",
-    "phone": "+1 (859) 481-3401"
+    "number": "+1 (859) 481-3401"
   },
   {
     "id": "7",
     "name": "Rodriguez Slater",
     "email": "rodriguezslater@songbird.com",
-    "phone": "+1 (916) 534-3095"
+    "number": "+1 (916) 534-3095"
   },
   {
     "id": "8",
     "name": "Brandi Gutierrez",
     "email": "brandigutierrez@songbird.com",
-    "phone": "+1 (892) 546-3800"
+    "number": "+1 (892) 546-3800"
   },
   {
     "id": "9",
     "name": "Day Fields",
     "email": "dayfields@songbird.com",
-    "phone": "+1 (818) 407-2287"
+    "number": "+1 (818) 407-2287"
   }
 ]

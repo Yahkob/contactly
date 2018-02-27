@@ -8,12 +8,14 @@ import './App.css';
 const mapDispatchToProps = dispatch => ({
   fetchContactsList: () => dispatch(fetchContactsList())
 });
+
+const mapStateToProps = state => ({ list: state.contacts });
+
 class App extends Component {
   componentDidMount() {
-    this.props.fetchContactsList();
-  }
-  onSearchKeyUp() {
-    this.setState();
+    if (!this.props.list.length) {
+      this.props.fetchContactsList();
+    }
   }
   render() {
     return (
@@ -25,7 +27,8 @@ class App extends Component {
 }
 
 App.PropTypes = {
-  fetchContacts: PropTypes.func
+  fetchContacts: PropTypes.func.isRequired,
+  list: PropTypes.array
 };
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
