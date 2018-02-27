@@ -1,21 +1,34 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { connect } from 'react-redux';
+import { fetchContactsList } from './actions';
+import ContactListContainer from './containers/ContactList';
 import './App.css';
 
-class App extends Component {
+const mapDispatchToProps = dispatch => ({
+  fetchContactsList: () => dispatch(fetchContactsList())
+});
+
+const mapStateToProps = state => ({ list: state.contacts });
+
+export class App extends Component {
+  componentDidMount() {
+    if (!this.props.list.length) {
+      this.props.fetchContactsList();
+    }
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <ContactListContainer />
       </div>
     );
   }
 }
 
-export default App;
+App.PropTypes = {
+  fetchContacts: PropTypes.func.isRequired,
+  list: PropTypes.array
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

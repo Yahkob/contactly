@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="contacts"
+>
+  <div
+    className="contact"
+  >
+    <a
+      href="1"
+      onClick={[Function]}
+    >
+      <div
+        className="name"
+      >
+        Batman
+      </div>
+    </a>
+  </div>
+  <div
+    className="contact"
+  >
+    <a
+      href="2"
+      onClick={[Function]}
+    >
+      <div
+        className="name"
+      >
+        Jake Harclerode
+      </div>
+    </a>
+  </div>
+  <div
+    className="contact"
+  >
+    <a
+      href="3"
+      onClick={[Function]}
+    >
+      <div
+        className="name"
+      >
+        Elon Musk
+      </div>
+    </a>
+  </div>
+  <div
+    className="contact"
+  >
+    <a
+      href="5"
+      onClick={[Function]}
+    >
+      <div
+        className="name"
+      >
+        Head Thornton
+      </div>
+    </a>
+  </div>
+  <div
+    className="contact"
+  >
+    <a
+      href="6"
+      onClick={[Function]}
+    >
+      <div
+        className="name"
+      >
+        Earnestine Cortez
+      </div>
+    </a>
+  </div>
+  <div
+    className="contact"
+  >
+    <a
+      href="7"
+      onClick={[Function]}
+    >
+      <div
+        className="name"
+      >
+        Rodriguez Slater
+      </div>
+    </a>
+  </div>
+  <div
+    className="contact"
+  >
+    <a
+      href="8"
+      onClick={[Function]}
+    >
+      <div
+        className="name"
+      >
+        Brandi Gutierrez
+      </div>
+    </a>
+  </div>
+  <div
+    className="contact"
+  >
+    <a
+      href="9"
+      onClick={[Function]}
+    >
+      <div
+        className="name"
+      >
+        Day Fields
+      </div>
+    </a>
+  </div>
+</div>
+`;

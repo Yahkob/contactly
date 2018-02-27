@@ -1,8 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Provider } from 'react-redux';
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
 import App from './App';
+import ContactDetails from './containers/ContactDetails'
+import './index.css';
 import registerServiceWorker from './registerServiceWorker';
+import configureStore from './store'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const store = configureStore();
+
+ReactDOM.render(
+  <Provider store={store}>
+    <Router>
+      <div>
+        <Route exact path="/" component={App} />
+        <Route path="/:id" component={ContactDetails} />
+      </div>  
+    </Router>
+  </Provider>,
+    document.getElementById('root'));
+  registerServiceWorker();
