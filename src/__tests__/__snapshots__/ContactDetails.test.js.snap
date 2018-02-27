@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="contactDetail"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    ◀ Back
+  </a>
+  <div
+    className="contactIcon"
+  />
+  <div
+    className="contactInfo"
+  >
+    <div
+      className="name"
+    >
+      Batman
+    </div>
+    <div
+      className="number"
+    >
+      555-123-4567
+    </div>
+    <div
+      className="email"
+    >
+      bruce@wayneenterprises.com
+    </div>
+  </div>
+</div>
+`;

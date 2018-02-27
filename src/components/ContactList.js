@@ -6,7 +6,7 @@ import './ContactList.css';
 const ContactList = ({ list }) => (
   <div className="contacts">
     {!list && 'Loading...'}
-    {list && list.map(contact => <Contact contact={contact} />)}
+    {list && list.map(contact => <Contact key={contact.id} contact={contact} />)}
   </div>
 );
 

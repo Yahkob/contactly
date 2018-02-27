@@ -11,7 +11,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = state => ({ list: state.contacts });
 
-class App extends Component {
+export class App extends Component {
   componentDidMount() {
     if (!this.props.list.length) {
       this.props.fetchContactsList();
